@@ -13,6 +13,9 @@
   "files": [
     "lib"
   ],
+  "bin": {
+    "koa2-cli-dev": "bin/index.js"
+  },
   "publishConfig": {
     "registry": "https://registry.npmjs.org",
     "access": "public"
@@ -27,5 +30,5 @@
   "bugs": {
     "url": "https://github.com/Y-wson/wson-koa2-cli/issues"
   },
-  "gitHead": "4d3b9c5721f762afdb07f53dffcc807d90d329b3"
+  "gitHead": "571f49216c15d562cd7a8ff86de125ae82f866ac"
 }
