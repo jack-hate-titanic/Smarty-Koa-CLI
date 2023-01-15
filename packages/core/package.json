@@ -1,6 +1,6 @@
 {
   "name": "@wsondq/koa2-cli-core",
-  "version": "1.0.8",
+  "version": "1.0.0",
   "description": "core",
   "author": "悦者生存 <1002783067@qq.com>",
   "homepage": "https://github.com/Y-wson/wson-koa2-cli#readme",
@@ -13,11 +13,8 @@
   "files": [
     "lib"
   ],
-  "bin": {
-    "koa2-cli-dev": "bin/index.js"
-  },
   "publishConfig": {
-    "registry": "https://registry.npmjs.org",
+    "registry": "http://registry.npmmirror.com",
     "access": "public"
   },
   "repository": {
@@ -29,6 +26,5 @@
   },
   "bugs": {
     "url": "https://github.com/Y-wson/wson-koa2-cli/issues"
-  },
-  "gitHead": "26a1ed4a50a1cb02571387a81b396296dbf52b58"
+  }
 }
