@@ -14,7 +14,7 @@
     "lib"
   ],
   "publishConfig": {
-    "registry": "http://registry.npmmirror.com",
+    "registry": "https://registry.npmjs.org",
     "access": "public"
   },
   "repository": {
@@ -27,5 +27,5 @@
   "bugs": {
     "url": "https://github.com/Y-wson/wson-koa2-cli/issues"
   },
-  "gitHead": "10350313e3f039ea32ecdd24065d9563a2dcba74"
+  "gitHead": "bfbca23b0fc0d9a2803009c8cdaad6516dd6324e"
 }
