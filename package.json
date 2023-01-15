@@ -1,6 +1,6 @@
 {
   "name": "wson-koa2-cli",
-  "private": false,
+  "private": true,
   "workspaces": [
     "packages/*"
   ],
