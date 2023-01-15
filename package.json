@@ -1,6 +1,6 @@
 {
   "name": "@wsondq/koa2-cli",
-  "private": true,
+  "private": false,
   "workspaces": [
     "packages/*"
   ],
