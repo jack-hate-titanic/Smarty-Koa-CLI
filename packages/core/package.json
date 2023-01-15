@@ -1,5 +1,5 @@
 {
-  "name": "@wson-koa2-cli/core",
+  "name": "@wsondq/koa2-cli-core",
   "version": "1.0.1",
   "description": "core",
   "author": "悦者生存 <1002783067@qq.com>",
@@ -26,5 +26,6 @@
   },
   "bugs": {
     "url": "https://github.com/Y-wson/wson-koa2-cli/issues"
-  }
+  },
+  "gitHead": "e5b303d7919d768070730e0fa6bd783569a749e4"
 }
