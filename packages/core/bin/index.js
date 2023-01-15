@@ -1,2 +1,2 @@
 #! /usr/bin/env node
-console.log('hello wsondq2');
+console.log('hello wsondq3');
