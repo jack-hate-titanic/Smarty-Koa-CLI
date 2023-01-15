@@ -1,0 +1,13 @@
+0 silly argv {
+0 silly argv   _: [ 'add' ],
+0 silly argv   globs: [],
+0 silly argv   lernaVersion: '6.0.1',
+0 silly argv   '$0': 'lerna',
+0 silly argv   pkg: '@wson-koa-cli/core'
+0 silly argv }
+1 notice cli v6.0.1
+2 verbose rootPath /Users/wson/Desktop/wson-koa2-cli
+3 error HttpErrorGeneral: 404 Not Found - GET https://registry.npmmirror.com/@wson-koa-cli%2fcore - [NOT_FOUND] @wson-koa-cli/core not found
+3 error     at /Users/wson/Desktop/lerna/node_modules/npm-registry-fetch/lib/check-response.js:93:15
+3 error     at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+3 error     at async RegistryFetcher.packument (/Users/wson/Desktop/lerna/node_modules/pacote/lib/registry.js:92:19)

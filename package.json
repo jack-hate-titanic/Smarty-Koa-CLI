@@ -1,0 +1,10 @@
+{
+  "name": "wson-koa2-cli",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "devDependencies": {
+    "lerna": "^6.0.1"
+  }
+}
