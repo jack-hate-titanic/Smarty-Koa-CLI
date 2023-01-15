@@ -1,6 +1,6 @@
 {
   "name": "@wson-koa2-cli/core",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "core",
   "author": "悦者生存 <1002783067@qq.com>",
   "homepage": "https://github.com/Y-wson/wson-koa2-cli#readme",
@@ -17,7 +17,6 @@
     "registry": "https://registry.npmjs.org",
     "access": "public"
   },
-  
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Y-wson/wson-koa2-cli.git"
