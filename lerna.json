@@ -3,6 +3,9 @@
   "useWorkspaces": true,
   "version": "1.0.12",
   "packages": [
-    "packages/*"
+    "commands/*",
+    "models/*",
+    "core/*",
+    "utils/*"
   ]
 }
