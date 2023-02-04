@@ -1,7 +1,7 @@
 {
-  "name": "@wsondq/koa2-cli-core",
+  "name": "@wson-koa2-cli/log",
   "version": "1.0.12",
-  "description": "core",
+  "description": "> TODO: description",
   "author": "悦者生存 <1002783067@qq.com>",
   "homepage": "https://github.com/Y-wson/wson-koa2-cli#readme",
   "license": "ISC",
@@ -14,7 +14,6 @@
     "lib"
   ],
   "publishConfig": {
-    "registry": "https://registry.npmjs.org",
     "access": "public"
   },
   "repository": {
@@ -22,10 +21,12 @@
     "url": "git+https://github.com/Y-wson/wson-koa2-cli.git"
   },
   "scripts": {
-    "test": "node ./__tests__/@wson-koa-cli/core.test.js"
+    "test": "node ./__tests__/@wson-koa2-cli/log.test.js"
   },
   "bugs": {
     "url": "https://github.com/Y-wson/wson-koa2-cli/issues"
   },
-  "gitHead": "bfbca23b0fc0d9a2803009c8cdaad6516dd6324e"
+  "dependencies": {
+    "npmlog": "^7.0.1"
+  }
 }
