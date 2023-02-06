@@ -1,6 +1,6 @@
 {
   "name": "@wson-koa2-cli/core",
-  "version": "1.0.12",
+  "version": "1.0.13",
   "description": "命令行运行模块",
   "author": "悦者生存 <1002783067@qq.com>",
   "homepage": "https://github.com/Y-wson/wson-koa2-cli#readme",
@@ -30,8 +30,8 @@
     "url": "https://github.com/Y-wson/wson-koa2-cli/issues"
   },
   "dependencies": {
-    "@wson-koa2-cli/log": "file:/Users/wson/Desktop/wson-koa2-cli/utils/log",
     "@wson-koa2-cli/get-npm-info": "file:/Users/wson/Desktop/wson-koa2-cli/utils/get-npm-info",
+    "@wson-koa2-cli/log": "file:/Users/wson/Desktop/wson-koa2-cli/utils/log",
     "import-local": "^3.1.0",
     "npmlog": "^7.0.1",
     "semver": "^7.3.8"
