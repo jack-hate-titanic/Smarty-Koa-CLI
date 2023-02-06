@@ -17,7 +17,8 @@
     "lib"
   ],
   "publishConfig": {
-    "registry": "https://registry.npm.taobao.org/"
+    "registry": "https://registry.npmjs.org",
+    "access": "public"
   },
   "repository": {
     "type": "git",
@@ -30,10 +31,11 @@
     "url": "https://github.com/Y-wson/wson-koa2-cli/issues"
   },
   "dependencies": {
-    "@wson-koa2-cli/get-npm-info": "file:/Users/wson/Desktop/wson-koa2-cli/utils/get-npm-info",
-    "@wson-koa2-cli/log": "file:/Users/wson/Desktop/wson-koa2-cli/utils/log",
+    "@wson-koa2-cli/get-npm-info": "^1.0.14",
+    "@wson-koa2-cli/log": "^1.0.14",
     "import-local": "^3.1.0",
     "npmlog": "^7.0.1",
     "semver": "^7.3.8"
-  }
+  },
+  "gitHead": "506b26dc2d2d4846ed9dce9952e24c8e9c3d5730"
 }
