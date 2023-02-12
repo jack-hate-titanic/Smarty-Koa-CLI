@@ -1,7 +1,16 @@
+/*
+ * @Author: 悦者生存 1002783067@qq.com
+ * @Date: 2023-02-05 09:03:48
+ * @LastEditors: 悦者生存 1002783067@qq.com
+ * @LastEditTime: 2023-02-12 17:07:03
+ * @FilePath: /wson-koa2-cli/core/cli/lib/index.js
+ * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+ */
 "use strict";
 const log = require("@wson-koa2-cli/log");
 const { getNpmLatestVersions } = require("@wson-koa2-cli/get-npm-info");
 const semver = require("semver");
+const { program } = require("commander"); 
 const pkg = require("../package.json");
 const LOWEST_NODE_VERSION = "12.0.0";
 const LOWEST_PKG_VERSION = "1.0.12";
@@ -49,10 +58,33 @@ async function prepare() {
   await npmUpdateLatestVersionWarning();
 }
 
+function registerCommand() {
+  // 帮助部分内容
+  program
+    .usage("<command> [option]")  // 帮助信息首行内容
+    .version(pkg.version) // 定义版本号
+    .option('-d,--debug', 'whether to enable debug modal', false);
+  
+  // 创建部分内容
+  program
+    .command('init <projectName>')
+    .option('-f, --force', 'whether to force init project', false)
+    .action((projectName, options) => {
+      console.log("projectName:",projectName,'options:',options);
+    })
+  
+
+  // 获取参数
+  const params = program.opts();
+  
+  program.parse(program.argv);
+}
+
 async function core() {
   try {
     // 命令启动前的检查
     await prepare();
+    registerCommand();
   } catch (error) {
     log.error(error);
   }

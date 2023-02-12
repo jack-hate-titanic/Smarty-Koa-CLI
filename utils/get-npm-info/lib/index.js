@@ -1,6 +1,7 @@
 "use strict";
 
 const axios = require("axios");
+const semver = require("semver");
 
 function getNpmInfo() {
   return "Hello from getNpmInfo";
@@ -41,6 +42,24 @@ async function getNpmVersions(npmName) {
   } else {
     return [];
   }
+}
+
+
+// 获取比当前脚手架版本大的版本信息
+function getSemverVersions(baseVersion, versions) {
+  return versions
+    .filter(version =>
+      // semver.satisfies函数表示获取大于^1.0.4的版本，^有大于等于的意思
+      semver.satisfies(version, `^${baseVersion}`)
+    )
+    // 有可能从npm上获取的版本不是排序之后的
+    .sort((a, b) => {
+      if (semver.gt(b, a)) {
+        return 1
+      } else {
+        return -1
+      }
+    })
 }
 
 // 获取最新版本

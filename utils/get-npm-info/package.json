@@ -27,5 +27,8 @@
   "bugs": {
     "url": "https://github.com/Y-wson/wson-koa2-cli/issues"
   },
-  "gitHead": "82c4788620390bba8e01a1c037b63061e80fa247"
+  "gitHead": "82c4788620390bba8e01a1c037b63061e80fa247",
+  "dependencies": {
+    "semver": "^7.3.8"
+  }
 }
