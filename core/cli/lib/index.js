@@ -2,13 +2,14 @@
  * @Author: 悦者生存 1002783067@qq.com
  * @Date: 2023-02-05 09:03:48
  * @LastEditors: 悦者生存 1002783067@qq.com
- * @LastEditTime: 2023-02-12 17:07:03
+ * @LastEditTime: 2023-02-12 17:44:27
  * @FilePath: /wson-koa2-cli/core/cli/lib/index.js
  * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
  */
 "use strict";
 const log = require("@wson-koa2-cli/log");
 const { getNpmLatestVersions } = require("@wson-koa2-cli/get-npm-info");
+const init = require("@wson-koa2-cli/init");
 const semver = require("semver");
 const { program } = require("commander"); 
 const pkg = require("../package.json");
@@ -69,14 +70,32 @@ function registerCommand() {
   program
     .command('init <projectName>')
     .option('-f, --force', 'whether to force init project', false)
-    .action((projectName, options) => {
-      console.log("projectName:",projectName,'options:',options);
-    })
+    .action(init);
   
-
   // 获取参数
   const params = program.opts();
   
+  // 监听debug命令
+  program.on('option:debug', () => {
+    if (params.debug) {
+      process.env.LOG_LEVEL = 'verbose';
+    } else {
+      process.env.LOG_LEVEL = 'info';
+    }
+    // 设置log等级
+    log.level = process.env.LOG_LEVEL;
+    log.verbose('debug');
+  })
+
+  // 监听未注册的所有命令
+  program.on('command:*', (obj) => {
+    const commands = program.commands.map((cmd) => cmd.name());
+    log.info('未知的命令 ' + obj[0]);
+    if (commands.length > 0) {
+      log.info('支持的命令 ' + commands.join(','));
+    }
+  })
+
   program.parse(program.argv);
 }
 

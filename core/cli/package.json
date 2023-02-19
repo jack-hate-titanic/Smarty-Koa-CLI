@@ -31,8 +31,9 @@
     "url": "https://github.com/Y-wson/wson-koa2-cli/issues"
   },
   "dependencies": {
-    "@wson-koa2-cli/get-npm-info": "/Users/wson/Desktop/wson-koa2-cli/utils/get-npm-info",
-    "@wson-koa2-cli/log": "/Users/wson/Desktop/wson-koa2-cli/utils/log",
+    "@wson-koa2-cli/get-npm-info": "file:/Users/wson/Desktop/wson-koa2-cli/utils/get-npm-info",
+    "@wson-koa2-cli/log": "file:/Users/wson/Desktop/wson-koa2-cli/utils/log",
+    "@wson-koa2-cli/init": "file:/Users/wson/Desktop/wson-koa2-cli/commands/init",
     "commander": "^10.0.0",
     "import-local": "^3.1.0",
     "npmlog": "^7.0.1",

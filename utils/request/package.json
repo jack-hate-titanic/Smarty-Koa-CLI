@@ -1,0 +1,32 @@
+{
+  "name": "@wson-koa2-cli/request",
+  "version": "1.0.16",
+  "description": "> TODO: description",
+  "author": "悦者生存 <1002783067@qq.com>",
+  "homepage": "https://github.com/Y-wson/wson-koa2-cli#readme",
+  "license": "ISC",
+  "main": "lib/index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "publishConfig": {
+    "registry": "http://registry.npmmirror.com/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Y-wson/wson-koa2-cli.git"
+  },
+  "scripts": {
+    "test": "node ./__tests__/@wson-koa2-cli/request.test.js"
+  },
+  "bugs": {
+    "url": "https://github.com/Y-wson/wson-koa2-cli/issues"
+  },
+  "dependencies": {
+    "axios": "^1.3.2"
+  }
+}
