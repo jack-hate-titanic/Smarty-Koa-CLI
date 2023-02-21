@@ -14,7 +14,8 @@
     "lib"
   ],
   "publishConfig": {
-    "registry": "http://registry.npmmirror.com/"
+    "registry": "https://registry.npmjs.org", 
+    "access": "public"
   },
   "repository": {
     "type": "git",
@@ -35,5 +36,5 @@
     "ora": "^6.1.2",
     "zdex-downloadgitrepo": "^1.2.0"
   },
-  "gitHead": "13ce5f9873b11e10627f6f068c5714f73ed2c458"
+  "gitHead": "7ae51a4d89feb7877d0975d2ce873bc8ee5ff855"
 }
