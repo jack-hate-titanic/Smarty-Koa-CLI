@@ -28,13 +28,11 @@
     "url": "https://github.com/Y-wson/wson-koa2-cli/issues"
   },
   "dependencies": {
-    "@wson-koa2-cli/log": "^1.0.16",
     "@wson-koa2-cli/request": "^1.1.3",
     "@wson-koa2-cli/utils": "^1.1.3",
     "fs-extra": "^11.1.0",
     "inquirer": "^8.2.5",
-    "ora": "^6.1.2",
-    "zdex-downloadgitrepo": "^1.2.0"
+    "ora": "^6.1.2"
   },
   "gitHead": "7ae51a4d89feb7877d0975d2ce873bc8ee5ff855"
 }

@@ -2,12 +2,11 @@
  * @Author: 悦者生存 1002783067@qq.com
  * @Date: 2023-02-12 17:32:42
  * @LastEditors: 悦者生存 1002783067@qq.com
- * @LastEditTime: 2023-02-19 22:35:13
+ * @LastEditTime: 2023-02-21 21:47:31
  * @FilePath: /wson-koa2-cli/commands/init/lib/index.js
  * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
  */
 'use strict';
-const { wrapLoading } = require("@wson-koa2-cli/utils");
 const fs = require('fs-extra');
 const path = require('path');
 const inquirer = require('inquirer');
