@@ -34,7 +34,7 @@ async function wrapLoading(fn, message, failMessage, ...args) {
       // 状态为修改为失败
       spinner.fail(failMessage)
     } 
-  }
+}
 
 module.exports = {
     execAsync,
