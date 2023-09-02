@@ -7,7 +7,7 @@
  * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
 -->
 <p align="center">
-<img src="https://koajs.bootcss.com/public/images/koa-logo.png" style="width:200px;" />
+<img src="https://pic4.zhimg.com/v2-d49c9c9eafa636c9707ac5b6d889a3fe_1440w.jpg" style="width:200px;" />
 </p>
 
 <h1 align="center">Smarty-Koa-CLI</h1>
