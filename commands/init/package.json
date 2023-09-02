@@ -1,6 +1,6 @@
 {
   "name": "@wson-koa2-cli/init",
-  "version": "1.1.5",
+  "version": "1.1.6",
   "description": "> TODO: description",
   "author": "悦者生存 <1002783067@qq.com>",
   "homepage": "https://github.com/Y-wson/wson-koa2-cli#readme",
@@ -29,7 +29,7 @@
   },
   "dependencies": {
     "@wson-koa2-cli/request": "^1.1.3",
-    "@wson-koa2-cli/utils": "^1.1.5",
+    "@wson-koa2-cli/utils": "^1.1.6",
     "fs-extra": "^11.1.0",
     "inquirer": "^8.2.5",
     "ora": "^6.1.2"

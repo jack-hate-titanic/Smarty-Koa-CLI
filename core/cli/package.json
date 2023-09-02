@@ -32,7 +32,7 @@
   },
   "dependencies": {
     "@wson-koa2-cli/get-npm-info": "^1.1.4",
-    "@wson-koa2-cli/init": "^1.1.5",
+    "@wson-koa2-cli/init": "^1.1.6",
     "@wson-koa2-cli/log": "^1.0.16",
     "commander": "^10.0.0",
     "import-local": "^3.1.0",
