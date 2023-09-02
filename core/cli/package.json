@@ -1,6 +1,6 @@
 {
-  "name": "@wson-koa2-cli/core",
-  "version": "1.1.5",
+  "name": "smarty-koa-cli",
+  "version": "1.1.6",
   "description": "命令行运行模块",
   "author": "悦者生存 <1002783067@qq.com>",
   "homepage": "https://github.com/Y-wson/wson-koa2-cli#readme",
@@ -11,7 +11,7 @@
     "test": "__tests__"
   },
   "bin": {
-    "wson-koa2-cli": "bin/index.js"
+    "smarty-koa-cli": "bin/index.js"
   },
   "files": [
     "lib"
