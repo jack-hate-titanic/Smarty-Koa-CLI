@@ -1,13 +1,98 @@
 0 silly argv {
-0 silly argv   _: [ 'add' ],
-0 silly argv   globs: [],
+0 silly argv   _: [ 'publish' ],
+0 silly argv   composed: 'publish',
 0 silly argv   lernaVersion: '6.4.1',
-0 silly argv   '$0': 'lerna',
-0 silly argv   pkg: '@wson-koa-cli/commands'
+0 silly argv   '$0': 'lerna'
 0 silly argv }
 1 notice cli v6.4.1
 2 verbose rootPath /Users/wson/Desktop/wson-koa2-cli
-3 error HttpErrorGeneral: 404 Not Found - GET https://registry.npmjs.org/@wson-koa-cli%2fcommands - Not found
-3 error     at /Users/wson/Desktop/wson-koa2-cli/node_modules/npm-registry-fetch/lib/check-response.js:95:15
-3 error     at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
-3 error     at async RegistryFetcher.packument (/Users/wson/Desktop/wson-koa2-cli/node_modules/pacote/lib/registry.js:92:19)
+3 warn EWORKSPACES Workspaces exist in the root package.json, but Lerna is not configured to use them.
+3 warn EWORKSPACES To fix this and have Lerna use workspaces to resolve packages, set `useWorkspaces: true` in lerna.json.
+4 verbose session a8ffd01a38583af1
+5 verbose user-agent lerna/6.4.1/node@v19.1.0+x64 (darwin)
+6 silly argv { _: [ 'publish' ], composed: 'publish', lernaVersion: '6.4.1' }
+7 verbose rootPath /Users/wson/Desktop/wson-koa2-cli
+8 warn EWORKSPACES Workspaces exist in the root package.json, but Lerna is not configured to use them.
+8 warn EWORKSPACES To fix this and have Lerna use workspaces to resolve packages, set `useWorkspaces: true` in lerna.json.
+9 info current version 1.1.6
+10 silly isAnythingCommitted
+11 verbose isAnythingCommitted 1
+12 silly getCurrentBranch
+13 verbose currentBranch master
+14 silly remoteBranchExists
+15 silly isBehindUpstream
+16 silly isBehindUpstream master is behind origin/master by 0 commit(s) and ahead by 0
+17 silly hasTags
+18 verbose hasTags true
+19 silly git-describe.sync "v1.1.6-4-gf70aed3" => {"lastTagName":"v1.1.6","lastVersion":"v1.1.6","refCount":"4","sha":"f70aed3","isDirty":false}
+20 info Looking for changed packages since v1.1.6
+21 silly checking diff commands/init
+22 silly no diff found in @wson-koa2-cli/init
+23 silly checking diff core/cli
+24 silly found diff in core/cli/README.md
+25 verbose filtered diff [ 'core/cli/README.md' ]
+26 silly checking diff utils/get-npm-info
+27 silly no diff found in @wson-koa2-cli/get-npm-info
+28 silly checking diff utils/log
+29 silly no diff found in @wson-koa2-cli/log
+30 silly checking diff utils/request
+31 silly no diff found in @wson-koa2-cli/request
+32 silly checking diff utils/utils
+33 silly no diff found in @wson-koa2-cli/utils
+34 verbose updated smarty-koa-cli
+35 verbose git-describe undefined => "v1.1.6-4-gf70aed3"
+36 silly git-describe parsed => {"lastTagName":"v1.1.6","lastVersion":"v1.1.6","refCount":"4","sha":"f70aed3","isDirty":false}
+37 info execute Skipping releases
+38 silly lifecycle No script for "preversion" in "wson-koa2-cli", continuing
+39 silly lifecycle No script for "preversion" in "smarty-koa-cli", continuing
+40 silly lifecycle No script for "version" in "smarty-koa-cli", continuing
+41 verbose version Updating root package-lock.json
+42 silly lifecycle No script for "version" in "wson-koa2-cli", continuing
+43 silly gitAdd [
+43 silly gitAdd   'core/cli/package.json',
+43 silly gitAdd   'core/cli/package-lock.json',
+43 silly gitAdd   'lerna.json',
+43 silly gitAdd   'package-lock.json'
+43 silly gitAdd ]
+44 silly gitCommit v1.1.7
+45 verbose git [ 'commit', '-m', 'v1.1.7' ]
+46 silly gitTag v1.1.7 git tag %s -m %s
+47 verbose git [ 'tag', 'v1.1.7', '-m', 'v1.1.7' ]
+48 silly lifecycle No script for "postversion" in "smarty-koa-cli", continuing
+49 silly lifecycle No script for "postversion" in "wson-koa2-cli", continuing
+50 info git Pushing tags...
+51 silly gitPush origin master
+52 info publish Publishing packages to npm...
+53 notice Skipping all user and access validation due to third-party registry
+54 notice Make sure you're authenticated properly ¯\_(ツ)_/¯
+55 silly getCurrentSHA
+56 verbose getCurrentSHA 2142a0422c14215618a3a64b8114e375ba8b3895
+57 silly lifecycle No script for "prepublish" in "wson-koa2-cli", continuing
+58 silly lifecycle No script for "prepare" in "wson-koa2-cli", continuing
+59 silly lifecycle No script for "prepublishOnly" in "wson-koa2-cli", continuing
+60 silly lifecycle No script for "prepack" in "wson-koa2-cli", continuing
+61 verbose pack-directory core/cli
+62 silly lifecycle No script for "prepublish" in "smarty-koa-cli", continuing
+63 silly lifecycle No script for "prepare" in "smarty-koa-cli", continuing
+64 silly lifecycle No script for "prepublishOnly" in "smarty-koa-cli", continuing
+65 silly lifecycle No script for "prepack" in "smarty-koa-cli", continuing
+66 silly lifecycle No script for "postpack" in "smarty-koa-cli", continuing
+67 verbose packed core/cli
+68 silly lifecycle No script for "postpack" in "wson-koa2-cli", continuing
+69 verbose publish smarty-koa-cli
+70 silly FetchError: network timeout at: https://registry.npmjs.org/smarty-koa-cli
+70 silly     at Timeout.<anonymous> (/Users/wson/Desktop/wson-koa2-cli/node_modules/minipass-fetch/lib/index.js:108:18)
+70 silly     at listOnTimeout (node:internal/timers:564:17)
+70 silly     at process.processTimers (node:internal/timers:507:7)
+70 silly  FetchError: network timeout at: https://registry.npmjs.org/smarty-koa-cli
+70 silly     at Timeout.<anonymous> (/Users/wson/Desktop/wson-koa2-cli/node_modules/minipass-fetch/lib/index.js:108:18)
+70 silly     at listOnTimeout (node:internal/timers:564:17)
+70 silly     at process.processTimers (node:internal/timers:507:7) {
+70 silly   code: 'FETCH_ERROR',
+70 silly   errno: 'FETCH_ERROR',
+70 silly   type: 'request-timeout'
+70 silly }
+71 error FETCH_ERROR network timeout at: https://registry.npmjs.org/smarty-koa-cli
+72 error FetchError: network timeout at: https://registry.npmjs.org/smarty-koa-cli
+72 error     at Timeout.<anonymous> (/Users/wson/Desktop/wson-koa2-cli/node_modules/minipass-fetch/lib/index.js:108:18)
+72 error     at listOnTimeout (node:internal/timers:564:17)
